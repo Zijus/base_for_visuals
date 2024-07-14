@@ -1,2 +1,6 @@
 flask
 gunicorn
+streamlit
+pandas
+matplotlib
+seaborn

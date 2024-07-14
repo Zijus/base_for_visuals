@@ -52,6 +52,10 @@ def insert_data(data):
     conn.commit()
     conn.close()
 
+@app.route('/')
+def index():
+    return "Hello, this is the root URL of the Flask app!"
+
 @app.route('/sensor', methods=['POST'])
 @requires_auth
 def sensor_data():
